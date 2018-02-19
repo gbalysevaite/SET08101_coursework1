@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Classical ciphers </title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+	<div class="top">
+		<h1> Classical ciphers </h1>
+			<nav> 
+			  <a href="index.html"> Home </a>
+			  <a href="caesar.html"> Caesar </a>
+			  <a href="rot13.html"> ROT13 </a>
+			  <a href="vigenere.html"> Vigenere </a>
+			  <a href="railFence.html"> Rail Fence </a>
+			</nav>
+	</div>
+		<aside> 
+			<p class="about"> About the project </p>
+			<p> This is a first coursework for module Web Tech. </p>
+		</aside>
+	<div class="main">
+		<h2> Rail fence cipher </h2>
+		<p> The rail fence cipher (also called a zigzag cipher) is a form of transposition cipher. It derives its name from the way in which it is encoded.</p>
+		<p>In the rail fence cipher, the plain text is written downwards and diagonally on successive "rails" of an imaginary fence, then moving up when we reach the bottom rail. When we reach the top rail, the message is written downwards again until the whole plaintext is written out. 
+			The rail fence cipher is not very strong; the number of practical keys (the number of rails) is small enough that a cryptanalyst can try them all by hand.
+			<a href="https://en.wikipedia.org/wiki/Rail_fence_cipher">[5]</a></p>
+	<div class="encryption">
+		Select shift:
+		<select id="shiftKey">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+		<br>
+			Input text:<br>
+			<textarea id="input" name="input" rows="4"></textarea>
+			<br>
+			<button type="button" id="encrypt" onclick="encrypt4()"> Encrypt </button>
+			<button type="button" id="decrypt" onclick="decrypt4()"> Decrypt </button>
+			<button type="button" id="clearAll" onclick="clearAll()"> Clear all </button>
+			<br>
+			Output:<br>
+			<textarea id="output" name="output" rows="4"></textarea>
+		</div>
+	</div>
+		<footer> 
+			<p> Created by: Gabriele Balysevaite </p>
+			<p> Contact information: <a href = "40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a> </p>
+			<p> About the <a href="design.html"> design </a></p>
+			<p> <a href="#top"> Back to top </a> </p>
+		</footer>
+	</body>
+	<script src="crypting.js"></script>
+</html>
+	

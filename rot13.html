@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Classical ciphers </title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+	<div class="top">
+		<h1> Classical ciphers </h1>
+			<nav> 
+			  <a href="index.html"> Home </a>
+			  <a href="caesar.html"> Caesar </a>
+			  <a href="rot13.html"> ROT13 </a>
+			  <a href="vigenere.html"> Vigenere </a>
+			  <a href="railFence.html"> Rail Fence </a>
+			</nav>
+	</div>
+		<aside> 
+			<p class="about"> About the project </p>
+			<p> This is a first coursework for module Web Tech. </p>
+		</aside>
+	<div class="main">
+		<h2> ROT13 cipher </h2>
+		<p> ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet. ROT13 is a special case of the Caesar cipher, developed in ancient Rome.</p>
+		<p>Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding. The algorithm provides virtually no cryptographic security, and is often cited as a canonical example of weak encryption.</p>
+		<p>ROT13 is used in online forums as a means of hiding spoilers, punchlines, puzzle solutions, and offensive materials from the casual glance. ROT13 has been described as the "Usenet equivalent of a magazine printing the answer to a quiz upside down". ROT13 has inspired a variety of letter and word games on-line, and is frequently mentioned in newsgroup conversations.<a href="https://en.wikipedia.org/wiki/ROT13">[3]</a></p>
+		<div class="encryption">
+			Input text:<br>
+			<textarea id="input" name="input" rows="4"></textarea>
+			<br>
+			<button type="button" id="encrypt" onclick="encrypt2()"> Encrypt </button>
+			<button type="button" id="decrypt" onclick="decrypt2()"> Decrypt </button>
+			<button type="button" id="clearAll" onclick="clearAll()"> Clear all </button>
+			<br>
+			Output:<br>
+			<textarea id="output" name="output" rows="4"></textarea>
+		</div>
+	</div>
+		<footer> 
+			<p> Created by: Gabriele Balysevaite </p>
+			<p> Contact information: <a href = "40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a> </p>
+			p> About the <a href="design.html"> design </a></p>
+			<p> <a href="#top"> Back to top </a> </p>
+		</footer>
+	</body>
+	<script src="crypting.js"></script>
+</html>
+	
