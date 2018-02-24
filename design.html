@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Design page </title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+	<div class="main" style="float: none; margin-left: 300px; margin-top: 50px">
+		<h2> Assumptions & setup </h2>
+		<ul>
+			<li> Style is added to HTML elements, though some of them have classes which help to group elements together, for example "top" class groups "h1" and "nav" elements</h1></li>
+			<li> Styles for elements with id's are used only in encryption class </li>
+			<li> Body takes up 100% width and has no margins or padding </li>
+		</ul>
+		<h2> Colours used</h2>
+		<ul>
+			<li style="background-color: #C3AEB2">#C3AEB2 (Black shadows)- for body background</li>
+			<li style="background-color: #FDF9F9 ">#FDF9F9 (Snow) - for aside and main background colour, text colour for .top and footer elements </li>
+			<li style="background-color: #10141C; color: #FDF9F9">#10141C (Eerie black) - for main and aside text, background colour for nav and footer elements </li>
+			<li style="background-color: #202C40; color: #FDF9F9">#202C40 (Yankees blue) - for nav buttons, when hovered on </li>
+			<li style="background-color: #364056">#364056 (Charcoal) - wasn't used, for elements which need to stand out on main paragraphs </li>
+		</ul>
+		<h2> </h2>
+	</div>
+
+	<div class="top">
+		<h1>&lth1&gt level heading title (size 80px, align: center) </h1>
+	</div>
+
+	<h2 style="text-align: center">&lth2&gt level heading title (text-indent: 50px)</h2>
+	<h2 style="text-align: center"> Navigation bar:</h2>
+		<nav>
+			<a>text-align: center</a>
+			<a>font-size: 30px</a>
+			<a>padding: 15px 25px</a>
+			<a>text-decoration: none</a>
+		</nav>
+
+	<aside>
+		<p class="about">Aside</p>
+		<p>Aside is used for notes about the coursework/project itself. It has a width of 17% and a shadow box around it</p>
+	</aside>
+
+	<div class="main">
+		<p>
+			Very simple styling was added to imput, output text area, shift key (or keyword) and buttons. They are left as default, only
+			padding is added around all of them. Also, output and input areas are 80% of the main width.
+		</p>
+		<ul> Margins:
+			<li> 15px 0 to keyword and shift key elements</li>
+			<li> 10px 15px to the buttons</li>
+			<li> 15px 0 to input and output areas</li>
+			<li> 20px to the whole encryption class field</li>
+		</ul>
+		<div class="encryption">
+			Keyword:<br>
+			<input id="keyword" type="text" name="keyword">
+			<br>
+			Select shift:
+			<select id="shiftKey">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			<br>
+		Input text:<br>
+		<textarea id="input" name="input" rows="4"></textarea>
+		<br>
+		<button type="button" id="encrypt" onclick="encrypt2()"> Encrypt</button>
+		<button type="button" id="decrypt" onclick="decrypt2()"> Decrypt</button>
+		<button type="button" id="clearAll" onclick="clearAll()"> Clear all</button>
+		<br>
+		Output:<br>
+		<textarea id="output" name="output" rows="4"></textarea>
+		</div>
+	</div>
+
+
+	<footer>
+		<p> The name and contacts of the author are here</p>
+		<p> Also could include copyrights or page information</p>
+	</footer>
+
+	</body>
+
+</html>

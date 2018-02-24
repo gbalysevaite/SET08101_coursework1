@@ -1,77 +1,84 @@
 <!DOCTYPE>
 <html>
-	<head>
-		<title> Classical ciphers </title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
-	</head>
-	<body>
-	<div class="top">
-		<h1> Classical ciphers </h1>
-			<nav> 
-			  <a href="index.html"> Home </a>
-			  <a href="caesar.html"> Caesar </a>
-			  <a href="rot13.html"> ROT13 </a>
-			  <a href="vigenere.html"> Vigenere </a>
-			  <a href="railFence.html"> Rail Fence </a>
-			</nav>
-	</div>
-		<aside> 
-			<p class="about"> About the project </p>
-			<p> This is a first coursework for module Web Tech. </p>
-		</aside>
-	<div class="main">
-		<h2> Caesar cipher </h2>
-		<p> In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</p>
-		<p>The encryption step performed by a Caesar cipher is often incorporated as part of more complex schemes, such as the Vigenère cipher, and still has modern application in the ROT13 system. As with all single-alphabet substitution ciphers, the Caesar cipher is easily broken and in modern practice offers essentially no communication security.<a href="https://en.wikipedia.org/wiki/Caesar_cipher">[2]</a></p>
-	<div class="encryption">
-		Select shift:
-		<select id="shiftKey">
-			<option value="0">0</option>
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="4">4</option>
-			<option value="5">5</option>
-			<option value="6">6</option>
-			<option value="7">7</option>
-			<option value="8">8</option>
-			<option value="9">9</option>
-			<option value="10">10</option>
-			<option value="11">11</option>
-			<option value="12">12</option>
-			<option value="13">13</option>
-			<option value="14">14</option>
-			<option value="15">15</option>
-			<option value="16">16</option>
-			<option value="17">17</option>
-			<option value="18">18</option>
-			<option value="19">19</option>
-			<option value="20">20</option>
-			<option value="21">21</option>
-			<option value="22">22</option>
-			<option value="23">23</option>
-			<option value="24">24</option>
-			<option value="25">25</option>
-		</select>
-		<br>
-			Input text:<br>
-			<textarea id="input" name="input" rows="4"></textarea>
-			<br>
-			<button type="button" id="encrypt" onclick="encrypt()"> Encrypt </button>
-			<button type="button" id="decrypt" onclick="decrypt()"> Decrypt </button>
-			<button type="button" id="clearAll" onclick="clearAll()"> Clear all </button>
-			<br>
-			Output:<br>
-			<textarea id="output" name="output" rows="4"></textarea>
-		</div>
-	</div>
-		<footer> 
-			<p> Created by: Gabriele Balysevaite </p>
-			<p> Contact information: <a href = "40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a> </p>
-			<p> About the <a href="design.html"> design </a></p>
-			<p> <a href="#top"> Back to top </a> </p>
-		</footer>
-	</body>
-	<script src="crypting.js"></script>
+<head>
+  <title> Classical ciphers </title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="top">
+  <h1> Classical ciphers </h1>
+  <nav>
+    <a href="index.html"> Home </a>
+    <a href="caesar.html"> Caesar </a>
+    <a href="rot13.html"> ROT13 </a>
+    <a href="vigenere.html"> Vigenere </a>
+    <a href="railFence.html"> Rail Fence </a>
+  </nav>
+</div>
+<aside>
+  <p class="about"> About the project </p>
+  <p> This is a first coursework for module Web Tech. </p>
+</aside>
+<div class="main">
+  <h2> Caesar cipher </h2>
+  <p> In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift,
+    is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which
+    each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example,
+    with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius
+    Caesar, who used it in his private correspondence.</p>
+  <p>The encryption step performed by a Caesar cipher is often incorporated as part of more complex schemes, such as the
+    Vigenere cipher, and still has modern application in the ROT13 system. As with all single-alphabet substitution
+    ciphers, the Caesar cipher is easily broken and in modern practice offers essentially no communication security.<a
+      href="https://en.wikipedia.org/wiki/Caesar_cipher">[2]</a></p>
+  <div class="encryption">
+    Select shift:
+    <select id="shiftKey">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+    </select>
+    <br>
+    Input text:<br>
+    <textarea id="input" name="input" rows="4"></textarea>
+    <br>
+    <button type="button" id="encrypt" onclick="encrypt()"> Encrypt</button>
+    <button type="button" id="decrypt" onclick="decrypt()"> Decrypt</button>
+    <button type="button" id="clearAll" onclick="clearAll()"> Clear all</button>
+    <br>
+    Output:<br>
+    <textarea id="output" name="output" rows="4"></textarea>
+  </div>
+</div>
+<footer>
+  <p> Created by: Gabriele Balysevaite </p>
+  <p> Contact information: <a href="40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a></p>
+  <p> About the <a href="design.html"> design </a></p>
+  <p><a href="#top"> Back to top </a></p>
+</footer>
+</body>
+<script src="crypting.js"></script>
 </html>
 	

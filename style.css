@@ -1,49 +1,130 @@
-body{
-	margin: 0;
-	padding: 0;
-	border: 1px solid black
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C3AEB2;
+  width: 100%;
 }
 
-aside{
-	float: right;
-	width: 17%;
-border: 1px solid black	
+aside {
+  float: right;
+  width: 17%;
+  padding: 15px;
+  color: #10141C;
+  background-color: #FDF9F9;
+  margin: 0 30px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+aside .about {
+  font-weight: bold;
+}
+
+.top {
+  width: 100%;
+  text-align: center;
+  background-image: url("wave2.gif");
+  background-color: black;
+  background-repeat: no-repeat;
+  color: #FDF9F9;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  padding: 80px 0;
+  margin: 0;
+  text-align: center;
+
+}
+
+nav {
+  text-align: center;
+  margin: 30px 0;
+  background-color: #10141C;
+  padding: 20px;
+}
+
+nav a {
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  color: #FDF9F9;
+}
+
+nav a:hover{
+  background-color: #202C40;
 }
 
 
-.top{
-	width: 100%;
-	text-align: center;
-	border: 1px solid black
-	
+.main {
+  float: right;
+  width: 55%;
+  background-color: #FDF9F9;
+  margin-bottom: 30px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-h1{
-	font-size: 80px;
-	padding: 80px 0px;
-	border: 1px solid black
-}
-nav{
-	border: 1px solid black
-}
-nav a{
-	text-align: center;
-	border: 1px solid black
+.main p {
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 170%;
+  margin: 10px 20px;
+  color: #10141C;
 }
 
-.main{
-	float: right;
-	width: 55%;
-	border: 1px solid black
+.main h2 {
+  text-indent: 50px;
 }
 
-footer{
-	clear: both;
-	width: 100%;
-	border: 1px solid black
+footer {
+  text-indent: 50px;
+  background-color: #10141C;
+  color: #FDF9F9;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  padding: 20px 0;
 }
 
-.main p{
-	text-align:justify;
-	border: 1px solid black
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #FDF9F9;
+}
+
+#input {
+  width: 80%;
+  margin: 15px 0;
+}
+
+#output {
+  width: 80%;
+  margin: 15px 0;
+}
+
+#keyword {
+  margin: 15px 0;
+}
+
+#shiftKey {
+  margin: 15px 0;
+}
+
+#encrypt {
+  margin: 10px 15px;
+}
+
+#decrypt {
+  margin: 10px 15px;
+}
+
+#clearAll {
+  margin: 10px 15px;
+}
+
+.encryption {
+  margin: 20px
 }

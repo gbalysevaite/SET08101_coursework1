@@ -1,52 +1,58 @@
 <!DOCTYPE>
 <html>
-	<head>
-		<title> Classical ciphers </title>
-		<link rel="stylesheet" href="style.css" type="text/css" />
-	
-	</head>
-	<body>
-	<div class="top">
-		<h1> Classical ciphers </h1>
-			<nav> 
-			  <a href="index.html"> Home </a>
-			  <a href="caesar.html"> Caesar </a>
-			  <a href="rot13.html"> ROT13 </a>
-			  <a href="vigenere.html"> Vigenere </a>
-			  <a href="railFence.html"> Rail Fence </a>
-			</nav>
-	</div>
-		<aside> 
-			<p class="about"> About the project </p>
-			<p> This is a first coursework for module Web Tech. </p>
-		</aside>
-	<div class="main">
-		<h2> Vigenere cipher </h2>
-		<p> The Vigenère cipher (French pronunciation: ​[viʒnɛːʁ]) is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers based on the letters of a keyword. It is a form of polyalphabetic substitution.</p>
-		<p>	Though the cipher is easy to understand and implement, for three centuries it resisted all attempts to break it; this earned it the description le chiffre indéchiffrable (French for 'the indecipherable cipher'). Many people have tried to implement encryption schemes that are essentially Vigenère ciphers.Friedrich Kasiski was the first to publish a general method of deciphering a Vigenère cipher in 1863.</p>
-		<p>	The Vigenère cipher was originally described by Giovan Battista Bellaso in his 1553 book La cifra del. Sig. Giovan Battista Bellaso; however, the scheme was later misattributed to Blaise de Vigenère in the 19th century, and thus acquired its present name.<a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">[4]</a></p>
-		<div class="encryption">
-			Keyword:<br>
-			<input id="keyword" type="text" name="keyword">
-			<br>
-			Input text:<br>
-			<textarea id="input" name="input" rows="4"></textarea>
-			<br>
-			<button type="button" id="encrypt" onclick="encrypt3()"> Encrypt </button>
-			<button type="button" id="decrypt" onclick="decrypt3()"> Decrypt </button>
-			<button type="button" id="clearAll" onclick="clearAll2()"> Clear all </button>
-			<br>
-			Output:<br>
-			<textarea id="output" name="output" rows="4"></textarea>
-		</div>
-	</div>
-		<footer> 
-			<p> Created by: Gabriele Balysevaite </p>
-			<p> Contact information: <a href = "40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a> </p>
-			<p> About the <a href="design.html"> design </a></p>
-			<p> <a href="#top"> Back to top </a> </p>
-		</footer>
-	</body>
-	<script src="crypting.js"></script>
+<head>
+  <title> Classical ciphers </title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+<body>
+<div class="top">
+  <h1> Classical ciphers </h1>
+  <nav>
+    <a href="index.html"> Home </a>
+    <a href="caesar.html"> Caesar </a>
+    <a href="rot13.html"> ROT13 </a>
+    <a href="vigenere.html"> Vigenere </a>
+    <a href="railFence.html"> Rail Fence </a>
+  </nav>
+</div>
+<aside>
+  <p class="about"> About the project </p>
+  <p> This is a first coursework for module Web Tech. </p>
+</aside>
+<div class="main">
+  <h2> Vigenere cipher </h2>
+  <p> The Vigenere cipher is a method of encrypting alphabetic text by using a series
+    of interwoven Caesar ciphers based on the letters of a keyword. It is a form of polyalphabetic substitution.</p>
+  <p> Though the cipher is easy to understand and implement, for three centuries it resisted all attempts to break it;
+    this earned it the description le chiffre indechiffrable (French for 'the indecipherable cipher'). Many people have
+    tried to implement encryption schemes that are essentially Vigenere ciphers. Friedrich Kasiski was the first to
+    publish a general method of deciphering a Vigenere cipher in 1863.</p>
+  <p> The Vigenere cipher was originally described by Giovan Battista Bellaso in his 1553 book La cifra del. Sig. Giovan
+    Battista Bellaso; however, the scheme was later misattributed to Blaise de Vigenere in the 19th century, and thus
+    acquired its present name.<a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">[4]</a></p>
+  <div class="encryption">
+    Keyword:<br>
+    <input id="keyword" type="text" name="keyword">
+    <br>
+    Input text:<br>
+    <textarea id="input" name="input" rows="4"></textarea>
+    <br>
+    <button type="button" id="encrypt" onclick="encrypt3()"> Encrypt</button>
+    <button type="button" id="decrypt" onclick="decrypt3()"> Decrypt</button>
+    <button type="button" id="clearAll" onclick="clearAll2()"> Clear all</button>
+    <br>
+    Output:<br>
+    <textarea id="output" name="output" rows="4"></textarea>
+  </div>
+</div>
+<footer>
+  <p> Created by: Gabriele Balysevaite </p>
+  <p> Contact information: <a href="40284966@live.napier.ac.uk"> 40284966@live.napier.ac.uk </a></p>
+  <p> About the <a href="design.html"> design </a></p>
+  <p><a href="#top"> Back to top </a></p>
+</footer>
+</body>
+<script src="crypting.js"></script>
 </html>
 	
