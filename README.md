@@ -1,2 +1,2 @@
 Edinburgh Napier University 
-SET08101 Web Tech modlue coursework
+SET08101 Web Tech module coursework
